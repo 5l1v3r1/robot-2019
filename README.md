@@ -11,5 +11,5 @@ FRC team #7108's code for  the 2019 Deep Space game. Robot control code is progr
 - Used PID control for turns and straight drives which brings a high success.
 
 ### Useful links
-- [FRC Java Programming Document](https://s3.amazonaws.com/screensteps_live/exported/Wpilib/2078/89642/FRC_Java_Programming.pdf?1536701977)
+- [FRC Java Programming Document](https://s3.amazonaws.com/screensteps_live/exported/Wpilib/2078/103379/FRC_Java_Programming.pdf?1546311421)
 - [FIRST official website](https://www.firstinspires.org/)

@@ -1,9 +1,0 @@
-[
-  {
-    "name": "TestRobot",
-    "file": "C:\\Users\\tezerv\\FRCProjects\\TestRobot\\build\\libs\\TestRobot.jar",
-    "extensions": [],
-    "librarydir": "C:\\Users\\tezerv\\FRCProjects\\TestRobot\\build\\tmp\\jniExtractDir",
-    "mainclass": "org.usfirst.frc7108.TestRobot.Main"
-  }
-]

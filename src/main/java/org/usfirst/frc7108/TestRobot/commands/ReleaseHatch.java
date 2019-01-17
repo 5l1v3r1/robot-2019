@@ -45,14 +45,15 @@ public class ReleaseHatch extends Command {
     @Override
     protected void execute() {
         Robot.pneumatic.openCylinder();
-        
+        System.out.println("I am opening the cylinders");        
 
     }
 
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return Robot.pneumatic.statusFlag;
+        // return Robot.pneumatic.statusFlag;
+        return false;
     }
 
     // Called once after isFinished returns true

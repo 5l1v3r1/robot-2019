@@ -7,17 +7,14 @@
 
 package org.usfirst.frc7108.TestRobot.commands;
 
+import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc7108.TestRobot.Robot;
 
-import edu.wpi.first.wpilibj.command.Command;
-
-public class CompressorSwitcher extends Command {
-  boolean status;
+public class CloseCompressor extends Command {
   boolean switchFlag = false;
-  public CompressorSwitcher(boolean _status) {
+  public CloseCompressor() {
     // Use requires() here to declare subsystem dependencies
     // eg. requires(chassis);
-   _status = this.status;
   }
 
   // Called just before this Command runs the first time
@@ -28,14 +25,8 @@ public class CompressorSwitcher extends Command {
   // Called repeatedly when this Command is scheduled to run
   @Override
   protected void execute() {
-    if(status == true){
-      Robot.pneumatic.openCompressor();
-      switchFlag = true;
-    }
-    else if (status == false){
-      Robot.pneumatic.closeCompressor();
-      switchFlag = true;
-   }
+    Robot.pneumatic.closeCompressor();
+    switchFlag = true;
   }
 
   // Make this return true when this Command no longer needs to run execute()
@@ -53,6 +44,5 @@ public class CompressorSwitcher extends Command {
   // subsystems is scheduled to run
   @Override
   protected void interrupted() {
-    end();
   }
 }

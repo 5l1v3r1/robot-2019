@@ -46,7 +46,7 @@ public class Pneumatic extends Subsystem {
         addChild("Compressor",compressor);
         
         
-        doubleSolenoid1 = new DoubleSolenoid(0, 1, 2);
+        doubleSolenoid1 = new DoubleSolenoid(0, 0, 1);
         addChild("Double Solenoid 1",doubleSolenoid1);
         
         
@@ -73,14 +73,14 @@ public class Pneumatic extends Subsystem {
 
     public void openCompressor()
     {
-       
         compressor.setClosedLoopControl(true);
-      
+        System.out.println("Opening compressor");
     }
 
     public void closeCompressor()
     {
         compressor.setClosedLoopControl(false);
+        System.out.println("Closing compressor");
     }
 
     public void turnOffCylinder()
